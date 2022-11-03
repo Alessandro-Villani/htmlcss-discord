@@ -31,6 +31,13 @@ a{
   padding: 10px;
 }
 
+button {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 33.5px;
+}
+
 h1{
   font-size: 60px;
   padding: 62px;
@@ -41,11 +48,16 @@ h2{
   font-weight: bold;
   margin-bottom: 20px;
 }
+
+h4{
+  font-size: 22px;
+}
 /* Utils */
 
 :root{
   --skyblue: rgb(37,94,233);
   --darkgray: rgb(35,39,42);
+  --azure: rgb(142,161,225);
 }
 
 .container {
@@ -109,6 +121,7 @@ h2{
   padding: 10px;
   border-radius: 18.5px;
   font-weight: bold;
+  font-size: 16px;
 }
 
 /* # Jumbotron */
@@ -139,12 +152,6 @@ h2{
   gap: 30px;
 }
 
-.jumbo-nav > button {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 15px;
-  border-radius: 33.5px;
-}
 
 button.white{
   background-color: white;
@@ -161,7 +168,7 @@ button.gray{
 /* # Main & sections */
 section {
   padding: 50px;
-  height: 600px;
+  min-height: 600px;
 }
 
 section > .container {
@@ -179,7 +186,7 @@ section > .container {
 
 .flex > .full-col {
   flex-basis: 100%;
-  background-color: darkgreen;
+  align-items: center;
 }
 
 section p{
@@ -189,6 +196,34 @@ section p{
 
 .row-reverse .large-col{
   text-align: right;
+}
+
+#img-discord-video{
+  width: 100%;
+}
+
+.star-bg{
+  padding: 40px 20px 0 20px ;
+  background-image: url(../img/stars.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.star-bg > h4{
+  padding: 0 20px;
+}
+
+.full-col > p {
+  text-align: center;
+}
+
+button.azure{
+  background-color: var(--azure);
+  border: 1px solid var(--azure);
+  color: white;
 }
 
 /* # Footer */
@@ -240,3 +275,4 @@ footer {
   padding: 5px 10px;
   background-color: yellow;
 }
+
